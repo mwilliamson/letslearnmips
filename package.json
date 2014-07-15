@@ -1,0 +1,17 @@
+{
+  "name": "letslearnmips",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mwilliamson/letslearnmips.git"
+  },
+  "author": "Michael Williamson <mike@zwobble.org>",
+  "license": "BSD 2-Clause",
+  "bugs": {
+    "url": "https://github.com/mwilliamson/letslearnmips/issues"
+  },
+  "homepage": "https://github.com/mwilliamson/letslearnmips",
+  "dependencies": {
+  }
+}
+
