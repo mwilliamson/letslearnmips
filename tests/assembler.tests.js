@@ -40,6 +40,8 @@ exports["andi"] = assembleLineTest("andi $t1, $t2, 0x42", "001100010100100100000
 exports["ori"] = assembleLineTest("ori $t1, $t2, 0x42", "00110101010010010000000001000010");
 exports["slti"] = assembleLineTest("slti $t1, $t2, 0x42", "00101001010010010000000001000010");
 
+exports["beq"] = assembleLineTest("beq $t1, $t2, 0x42", "00010001001010100000000001000010");
+
 
 function assembleLineTest(line, expectedResult) {
     return function(test) {
