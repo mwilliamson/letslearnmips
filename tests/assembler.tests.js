@@ -1,7 +1,12 @@
 var assembler = require("../lib/assembler");
 
+// R-type
 exports["add"] = assembleLineTest("add $t1, $t2, $t3", "1010010110100100000100000");
 exports["addu"] = assembleLineTest("addu $t1, $t2, $t3", "1010010110100100000100001");
+
+// I-type
+exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
+
 
 function assembleLineTest(line, expectedResult) {
     return function(test) {
