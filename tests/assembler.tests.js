@@ -20,6 +20,8 @@ exports["xor"] = assembleLineTest("xor $t1, $t2, $t3", "000000010100101101001000
 exports["nor"] = assembleLineTest("nor $t1, $t2, $t3", "00000001010010110100100000100111");
 exports["slt"] = assembleLineTest("slt $t1, $t2, $t3", "00000001010010110100100000101010");
 
+exports["sll"] = assembleLineTest("sll $t1, $t2, 0x4", "00000000000010100100100100000000");
+
 exports["jr"] = assembleLineTest("jr $t1", "00000001001000000000000000001000");
 
 // I-type
