@@ -1,7 +1,11 @@
 var assembler = require("../lib/assembler");
 
-exports["add"] = function(test) {
-    var result = assembler.assembleLine("add $t1, $t2, $t3");
-    test.equal(parseInt("1010010110100100000100000", 2), result);
-    test.done();
+exports["add"] = assembleLineTest("add $t1, $t2, $t3", "1010010110100100000100000");
+
+function assembleLineTest(line, expectedResult) {
+    return function(test) {
+        var result = assembler.assembleLine(line);
+        test.equal(parseInt(expectedResult, 2), result);
+        test.done();
+    };  
 };
