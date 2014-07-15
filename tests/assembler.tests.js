@@ -17,6 +17,7 @@ exports["mflo"] = assembleLineTest("mflo $t1", "00000000000000000100100000010010
 exports["and"] = assembleLineTest("and $t1, $t2, $t3", "00000001010010110100100000100100");
 exports["or"] = assembleLineTest("or $t1, $t2, $t3", "00000001010010110100100000100101");
 exports["xor"] = assembleLineTest("xor $t1, $t2, $t3", "00000001010010110100100000100110");
+exports["nor"] = assembleLineTest("nor $t1, $t2, $t3", "00000001010010110100100000100111");
 
 // I-type
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
