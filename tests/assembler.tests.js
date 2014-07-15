@@ -34,6 +34,8 @@ exports["jr"] = assembleLineTest("jr $t1", "00000001001000000000000000001000");
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
 exports["addiu"] = assembleLineTest("addiu $t1, $t2, 0x42", "00100101010010010000000001000010");
 
+exports["lui"] = assembleLineTest("lui $t1, 0x42", "00111100000010010000000001000010");
+
 
 function assembleLineTest(line, expectedResult) {
     return function(test) {
