@@ -18,6 +18,7 @@ exports["and"] = assembleLineTest("and $t1, $t2, $t3", "000000010100101101001000
 exports["or"] = assembleLineTest("or $t1, $t2, $t3", "00000001010010110100100000100101");
 exports["xor"] = assembleLineTest("xor $t1, $t2, $t3", "00000001010010110100100000100110");
 exports["nor"] = assembleLineTest("nor $t1, $t2, $t3", "00000001010010110100100000100111");
+exports["slt"] = assembleLineTest("slt $t1, $t2, $t3", "00000001010010110100100000101010");
 
 // I-type
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
