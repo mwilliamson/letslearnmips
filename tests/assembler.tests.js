@@ -10,6 +10,7 @@ exports["mult"] = assembleLineTest("mult $t1, $t2", "000000010010101000000000000
 exports["multu"] = assembleLineTest("multu $t1, $t2", "00000001001010100000000000011001");
 exports["div"] = assembleLineTest("div $t1, $t2", "00000001001010100000000000011010");
 exports["divu"] = assembleLineTest("divu $t1, $t2", "00000001001010100000000000011011");
+exports["mfhi"] = assembleLineTest("mfhi $t1", "00000000000000000100100000010000");
 
 // I-type
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
