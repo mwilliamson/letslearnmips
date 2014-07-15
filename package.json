@@ -11,7 +11,11 @@
     "url": "https://github.com/mwilliamson/letslearnmips/issues"
   },
   "homepage": "https://github.com/mwilliamson/letslearnmips",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "nodeunit": "^0.9.0"
+  },
+  "scripts": {
+    "test": "nodeunit tests"
   }
 }
-
