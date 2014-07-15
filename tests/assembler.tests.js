@@ -23,6 +23,7 @@ exports["slt"] = assembleLineTest("slt $t1, $t2, $t3", "000000010100101101001000
 exports["sll"] = assembleLineTest("sll $t1, $t2, 0x4", "00000000000010100100100100000000");
 exports["srl"] = assembleLineTest("srl $t1, $t2, 0x4", "00000000000010100100100100000010");
 exports["sra"] = assembleLineTest("sra $t1, $t2, 0x4", "00000000000010100100100100000011");
+exports["sllv"] = assembleLineTest("sllv $t1, $t2, $t3", "00000001011010100100100000000100");
 
 exports["jr"] = assembleLineTest("jr $t1", "00000001001000000000000000001000");
 
