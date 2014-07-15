@@ -8,6 +8,7 @@ exports["subu"] = assembleLineTest("subu $t1, $t2, $t3", "0000000101001011010010
 exports["subu"] = assembleLineTest("subu $t1, $t2, $t3", "00000001010010110100100000100011");
 exports["mult"] = assembleLineTest("mult $t1, $t2", "00000001001010100000000000011000");
 exports["multu"] = assembleLineTest("multu $t1, $t2", "00000001001010100000000000011001");
+exports["div"] = assembleLineTest("div $t1, $t2", "00000001001010100000000000011010");
 
 // I-type
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
