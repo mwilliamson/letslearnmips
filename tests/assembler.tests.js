@@ -34,6 +34,7 @@ exports["jr"] = assembleLineTest("jr $t1", "00000001001000000000000000001000");
 exports["addi"] = assembleLineTest("addi $t1, $t2, 0x42", "00100001010010010000000001000010");
 exports["addiu"] = assembleLineTest("addiu $t1, $t2, 0x42", "00100101010010010000000001000010");
 
+exports["lw"] = assembleLineTest("lw $t1, 16($t2)", "10001101010010010000000000010000");
 exports["lui"] = assembleLineTest("lui $t1, 0x42", "00111100000010010000000001000010");
 
 exports["andi"] = assembleLineTest("andi $t1, $t2, 0x42", "00110001010010010000000001000010");
@@ -47,7 +48,11 @@ exports["bne"] = assembleLineTest("bne $t1, $t2, 0x42", "00010101001010100000000
 function assembleLineTest(line, expectedResult) {
     return function(test) {
         var result = assembler.assembleLine(line);
-        test.equal(parseInt(expectedResult, 2), result);
+        var expected = parseInt(expectedResult, 2);
+        if (expected > Math.pow(2, 31)) {
+            expected = expected - Math.pow(2, 32);
+        }
+        test.equal(expected, result);
         test.done();
     };  
 };
