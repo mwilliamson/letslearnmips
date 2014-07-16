@@ -41,6 +41,7 @@ exports["lb"] = assembleLineTest("lb $t1, 16($t2)", "100000010100100100000000000
 exports["lbu"] = assembleLineTest("lbu $t1, 16($t2)", "10010001010010010000000000010000");
 exports["sw"] = assembleLineTest("sw $t1, 16($t2)", "10101101010010010000000000010000");
 exports["sh"] = assembleLineTest("sh $t1, 16($t2)", "10100101010010010000000000010000");
+exports["sb"] = assembleLineTest("sb $t1, 16($t2)", "10100001010010010000000000010000");
 exports["lui"] = assembleLineTest("lui $t1, 0x42", "00111100000010010000000001000010");
 
 exports["andi"] = assembleLineTest("andi $t1, $t2, 0x42", "00110001010010010000000001000010");
