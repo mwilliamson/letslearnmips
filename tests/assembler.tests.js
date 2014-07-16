@@ -37,6 +37,7 @@ exports["addiu"] = assembleLineTest("addiu $t1, $t2, 0x42", "0010010101001001000
 exports["lw"] = assembleLineTest("lw $t1, 16($t2)", "10001101010010010000000000010000");
 exports["lh"] = assembleLineTest("lh $t1, 16($t2)", "10000101010010010000000000010000");
 exports["lhu"] = assembleLineTest("lhu $t1, 16($t2)", "10010101010010010000000000010000");
+exports["lb"] = assembleLineTest("lb $t1, 16($t2)", "10000001010010010000000000010000");
 exports["lui"] = assembleLineTest("lui $t1, 0x42", "00111100000010010000000001000010");
 
 exports["andi"] = assembleLineTest("andi $t1, $t2, 0x42", "00110001010010010000000001000010");
