@@ -53,6 +53,7 @@ exports["bne"] = assembleLineTest("bne $t1, $t2, 0x42", "00010101001010100000000
 
 // J-type
 exports["j"] = assembleLineTest("j 0x42", "00001000000000000000000001000010");
+exports["jal"] = assembleLineTest("jal 0x42", "00001100000000000000000001000010");
 
 function assembleLineTest(line, expectedResult) {
     return function(test) {
