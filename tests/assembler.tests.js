@@ -51,6 +51,8 @@ exports["slti"] = assembleLineTest("slti $t1, $t2, 0x42", "001010010100100100000
 exports["beq"] = assembleLineTest("beq $t1, $t2, 0x42", "00010001001010100000000001000010");
 exports["bne"] = assembleLineTest("bne $t1, $t2, 0x42", "00010101001010100000000001000010");
 
+// J-type
+exports["j"] = assembleLineTest("j 0x42", "00001000000000000000000001000010");
 
 function assembleLineTest(line, expectedResult) {
     return function(test) {
